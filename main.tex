@@ -1,0 +1,196 @@
+%------------------------
+% Resume Template
+% Author : Juan R. Ortiz
+% Github : https://github.com/juanrortizx
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\flushbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeRoleSubheading}[2]{
+  \vspace{-1pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Juan Ramon Ortiz}} & Email: \href{mailto:}{juanrortiz@proton.me}\\
+  & Mobile:~~~909-471-1847 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{United Parcel Service (UPS)}{Ontario, California, USA}
+    {Corporate PLC Obsolescence Supervisor (Hybrid)}{April 2024 - Present}
+    \vspace{-5pt}
+    \resumeItemListStart
+          \resumeItem{Project Leadership and PLC Programming}{Led the HSLA conversion project to address obsolete controllers running on serial communications. Developed and modified standard PLC programs to resolve compatibility issues. Created a Vijeo Designer HMI program for legacy HMIS5T Magelis Panels to ensure compatibility with Studio 5000.}
+          \resumeItem{Legacy Equipment Upgrades}{Upgraded 200+ 1768-L45 controllers to CompactLogix 5069-L320ER nationwide, addressing PLC obsolescence and eliminating unsupported equipment that posed security risks.}
+          \resumeItem{Escalation and Technical Support}{Provide fourth-level escalation support for discontinued PLC platforms, resolving ladder logic, I/O, and communications failures through remote and onsite troubleshooting.}
+      \resumeItemListEnd
+
+    \resumeRoleSubheading
+    {Automation Engineering Specialist (Promoted Internally)}{October 2021 - April 2024}
+		\resumeItemListStart
+        \resumeItem{Network Troubleshooting and Design}{Led the remapping of the automated network to ensure reliable connectivity by redrawing the ring network in AutoCAD Electrical.}
+        \resumeItem{Conveyor System Retrofit}{Independently integrated jam detection sensors into existing conveyor systems, optimizing performance without requiring PLC code changes.}
+        \resumeItem{Electromechanical Design}{Collaborated with industrial engineers to design and deploy a cost-effective electro-mechanical oiler circuit across 29 systems.}
+		\resumeItemListEnd
+        
+    \resumeRoleSubheading
+    {Control Room PT Supervisor (Promoted Internally)}{July 2021 - October 2021}
+		\resumeItemListStart
+        \resumeItem{Operations Support and Troubleshooting}{Acted as liaison between operations, union mechanics, and technicians during live sort operations. Monitored HMIs to identify fault trends, analyzed causes of operational downtime, and facilitated troubleshooting.}
+		\resumeItemListEnd
+
+    \resumeRoleSubheading
+    {Operations Hub PT Lead (Promoted Internally)}{July 2020 - July 2021}
+		\resumeItemListStart
+        \resumeItem{Team Leadership and Execution}{Led a team in high-volume hub operations, overseeing staffing, safety communication, and daily operational execution to ensure efficiency and productivity.}
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{0pt}
+\section{Current Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Automated PLC Firmware Upgrade Tool}{Developed a python-based tool to automate the firmware conversion and disaster recovery process of multiple PLC controllers, reducing the process time by 70\%. Tech: Python, C\#, Logix Designer SDK, ControlFlash+ API}
+\vspace{2pt}
+\resumeSubItem{Self-Hosted Hypervisor}{Configured a Debian homelab server to host virtual machines within tailnet vpn and publicly hosted domain using reverse proxy and custom DNS. Tech: Bash, CLI, Proxmox VE, LXC / Docker Containers}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\vspace{0pt}
+\section{Skills Summary}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
+	\textbf{Languages:} & Python, C, Ladder Logic, PLC Structured Text, LaTeX \\[2pt]
+	\textbf{PLC Tools:} & Logix Designer SDK, RSLogix 500, Studio 5000, ControlFlash+ API \\[2pt]
+  \textbf{HMI Tools:} & FactoryTalk View, Vijeo Designer \\[2pt]
+	\textbf{Workspaces:} & Linux CLI, Windows, GIT, GitHub, VS Code \\[2pt]
+	\textbf{Technical Skills:} & Electrical Troubleshooting, Oscilloscopes, Digital Multimeter (DMM) \\[2pt]
+	\textbf{Soft Skills:} & Leadership, Project Management, Technical Documentation, Innovation, Team Collaboration \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\vspace{0pt}
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California Polytechnic State University}{Pomona, California, USA}
+      {Master in Electrical Engineering (M.S.)  Specialization: Control Systems}{(In Progress)}
+    \vspace{-8pt}
+    \resumeItemListStart
+      \resumeItem{Courses}{Numerical Modeling, Advanced Robotics}
+    \resumeItemListEnd
+    \vspace{-2pt}
+    \resumeRoleSubheading
+      {Bachelor in Electrical Engineering (B.S.)  Specialization: Control Systems and Robotics}{(Completed)}
+    \resumeItemListStart
+      \resumeItem{Courses}{Advanced Control Systems, Robotics, Machine Learning, RF Electronics}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-8pt}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Riverside City College}{Riverside, California, USA}
+      {Associate in Mathematics and Science (A.S.)}{(Completed)}
+    \vspace{-5pt}
+    \resumeRoleSubheading
+      {Bachelor in Social and Behavioral Studies (A.A.)}{(Completed)}
+    \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------------
+\vspace{0pt}
+\section{Certifications}
+\textbf{Rockwell Automation Learning+}
+\vspace{-12pt}
+\begin{multicols}{2}
+  \resumeItemListStart
+  \setlength{\itemsep}{0pt}
+    \resumeItem{CCP146 L1}{ControlLogix 5000 System Fundamentals}
+    \resumeItem{CCP151 L2}{Basic Ladder Logic Programming}
+    \resumeItem{CCP153 L2}{ControlLogix Maintenance}
+    \resumeItem{CCCL21 L3}{Basic Ladder Logic Interpretation}
+    \resumeItem{CCP143 L3}{Project Development}
+    \resumeItem{CCP154-EL L4}{STL and SFC Programming}
+    \resumeItem{CCP152 L4}{Function Block Programming}
+  \resumeItemListEnd
+\end{multicols}
+
+\end{document}
