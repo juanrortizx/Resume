@@ -87,10 +87,21 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Juan Ramon Ortiz}} & Email: \href{mailto:}{juanrortiz@proton.me}\\
-  & Mobile:~~~909-471-1847 \\
-\end{tabular*}
+\begin{center}
+  \textbf{\LARGE Juan Ramon Ortiz} \\[4pt]
+  \small
+  \href{mailto:juanrortiz@proton.me}{juanrortiz@proton.me} ~\textbar~
+  909-471-1847 ~\textbar~
+  \href{https://github.com/juanrortizx}{github.com/juanrortizx} ~\textbar~
+  \href{https://www.linkedin.com/in/juanrortiz}{linkedin.com/in/juanrortiz}
+  \normalsize
+\end{center}
+
+%----------SUMMARY-----------------
+\vspace{0pt}
+\section{Summary}
+\small{Electrical engineer with 4+ years of industrial automation experience transitioning into embedded systems and IoT software engineering. Hands-on experience in C++ systems programming, hardware integration, and serial communications. Pursuing an M.S. in Electrical Engineering specializing in Embedded Systems at Cal Poly Pomona.}
+\normalsize
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -105,45 +116,48 @@
       \resumeItemListEnd
 
     \resumeRoleSubheading
-    {Automation Engineering Specialist (Promoted Internally)}{October 2021 - April 2024}
-		\resumeItemListStart
-        \resumeItem{Network Troubleshooting and Design}{Led the remapping of the automated network to ensure reliable connectivity by redrawing the ring network in AutoCAD Electrical.}
-        \resumeItem{Conveyor System Retrofit}{Independently integrated jam detection sensors into existing conveyor systems, optimizing performance without requiring PLC code changes.}
-        \resumeItem{Electromechanical Design}{Collaborated with industrial engineers to design and deploy a cost-effective electro-mechanical oiler circuit across 29 systems.}
-		\resumeItemListEnd
+      {Automation Engineering Specialist (Promoted Internally)}{October 2021 - April 2024}
+    \resumeItemListStart
+      \resumeItem{Network Troubleshooting}{Led the remapping of the automated network to ensure reliable connectivity by redrawing the ring network in AutoCAD Electrical.}
+      \resumeItem{Sensor Integration}{Integrated jam detection sensors into conveyor systems by wiring directly to existing I/O modules, achieving real-time fault detection without modifying PLC logic.}
+    \resumeItemListEnd
         
     \resumeRoleSubheading
-    {Control Room PT Supervisor (Promoted Internally)}{July 2021 - October 2021}
-		\resumeItemListStart
-        \resumeItem{Operations Support and Troubleshooting}{Acted as liaison between operations, union mechanics, and technicians during live sort operations. Monitored HMIs to identify fault trends, analyzed causes of operational downtime, and facilitated troubleshooting.}
-		\resumeItemListEnd
+      {Control Room PT Supervisor (Promoted Internally)}{July 2021 - October 2021}
+    \resumeItemListStart
+      \resumeItem{Operations Support}{Monitored HMIs to identify fault trends and facilitated troubleshooting between operations, mechanics, and technicians.}
+    \resumeItemListEnd
 
     \resumeRoleSubheading
-    {Operations Hub PT Lead (Promoted Internally)}{July 2020 - July 2021}
-		\resumeItemListStart
-        \resumeItem{Team Leadership and Execution}{Led a team in high-volume hub operations, overseeing staffing, safety communication, and daily operational execution to ensure efficiency and productivity.}
-		\resumeItemListEnd
+      {Operations Hub PT Lead (Promoted Internally)}{July 2020 - July 2021}
+    \resumeItemListStart
+      \resumeItem{Team Leadership}{Led high-volume hub operations, managing staffing, safety communication, and daily execution.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \vspace{0pt}
-\section{Current Projects}
+\section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{Automated PLC Firmware Upgrade Tool}{Developed a python-based tool to automate the firmware conversion and disaster recovery process of multiple PLC controllers, reducing the process time by 70\%. Tech: Python, C\#, Logix Designer SDK, ControlFlash+ API}
+\resumeSubItem{Automated PLC Firmware Upgrade Tool}{Built a Python/C\# tool interfacing with the ControlFlash+ API and Logix Designer SDK to automate firmware flashing and disaster recovery across multiple PLC controllers, reducing process time by 70\%. Tech: Python, C\#, Logix Designer SDK, ControlFlash+ API}
 \vspace{2pt}
-\resumeSubItem{Self-Hosted Hypervisor}{Configured a Debian homelab server to host virtual machines within tailnet vpn and publicly hosted domain using reverse proxy and custom DNS. Tech: Bash, CLI, Proxmox VE, LXC / Docker Containers}
+\resumeSubItem{Minimal OS Memory Optimization}{Reduced a Windows 11 VM to 816MB idle RAM on QEMU/KVM by auditing and disabling kernel services, implementing process lifecycle management via native Win32 API and Rust utilities. Tech: C++, Rust, Win32 API, PowerShell, QEMU/KVM}
+\vspace{2pt}
+\resumeSubItem{Self-Hosted Hypervisor}{Deployed a bare-metal Debian hypervisor managing isolated VMs over a private tailnet, configuring reverse proxy, custom DNS, and container networking from scratch. Tech: Proxmox VE, LXC, Docker, Bash}
+\vspace{2pt}
+\resumeSubItem{Image Segmentation via DCT Feature Extraction}{Implemented a Bayesian MAP classifier in MATLAB to segment foreground and background in images using 8x8 block DCT features, zig-zag scanning, and class-conditional probability estimation. Tech: MATLAB, Signal Processing, Statistical Classification}
 \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------------
 \vspace{0pt}
 \section{Skills Summary}
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
-	\textbf{Languages:} & Python, C, Ladder Logic, PLC Structured Text, LaTeX \\[2pt]
-	\textbf{PLC Tools:} & Logix Designer SDK, RSLogix 500, Studio 5000, ControlFlash+ API \\[2pt]
-  \textbf{HMI Tools:} & FactoryTalk View, Vijeo Designer \\[2pt]
-	\textbf{Workspaces:} & Linux CLI, Windows, GIT, GitHub, VS Code \\[2pt]
-	\textbf{Technical Skills:} & Electrical Troubleshooting, Oscilloscopes, Digital Multimeter (DMM) \\[2pt]
-	\textbf{Soft Skills:} & Leadership, Project Management, Technical Documentation, Innovation, Team Collaboration \\
+  \textbf{Languages:} & C, Python, PowerShell, Rust, LaTeX \\[2pt]
+  \textbf{Embedded \& Systems:} & Win32 API, Memory Optimization, GCC/g++, Cargo \\[2pt]
+  \textbf{Dev Environment:} & Linux CLI, QEMU/KVM, SSH, Helix, Zellij, VS Code \\[2pt]
+  \textbf{Hardware \& Test:} & Oscilloscopes, DMM, Electrical Soldering and Wire Troubleshooting \\[2pt]
+  \textbf{Industry Tools:} & Logix Designer SDK, ControlFlash+ API, Studio 5000 \\[2pt]
+  \textbf{Soft Skills:} & Leadership, Project Management, Technical Documentation, Team Collaboration \\ 
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -152,45 +166,32 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {California Polytechnic State University}{Pomona, California, USA}
-      {Master in Electrical Engineering (M.S.)  Specialization: Control Systems}{(In Progress)}
+      {Master in Electrical Engineering (M.S.)  Specialization: Embedded Systems}{(In Progress)}
     \vspace{-8pt}
     \resumeItemListStart
-      \resumeItem{Courses}{Numerical Modeling, Advanced Robotics}
+      \resumeItem{Courses}{Advanced Robotics, Nanoelectronics (Upcoming)}
     \resumeItemListEnd
     \vspace{-2pt}
     \resumeRoleSubheading
       {Bachelor in Electrical Engineering (B.S.)  Specialization: Control Systems and Robotics}{(Completed)}
     \resumeItemListStart
-      \resumeItem{Courses}{Advanced Control Systems, Robotics, Machine Learning, RF Electronics}
+      \resumeItem{Courses}{Microcontrollers, Signals and Systems, RF Electronics, Advanced Control Systems}
     \resumeItemListEnd
     \resumeSubHeadingListEnd
-    \vspace{-8pt}
+    \vspace{-14pt}
  \resumeSubHeadingListStart
     \resumeSubheading
       {Riverside City College}{Riverside, California, USA}
       {Associate in Mathematics and Science (A.S.)}{(Completed)}
     \vspace{-5pt}
     \resumeRoleSubheading
-      {Bachelor in Social and Behavioral Studies (A.A.)}{(Completed)}
+      {Associate in Social and Behavioral Studies (A.A.)}{(Completed)}
     \resumeSubHeadingListEnd
 
 
-%-----------CERTIFICATIONS-----------------
-\vspace{0pt}
+% -----------CERTIFICATIONS-----------------
+\vspace{-2pt}
 \section{Certifications}
-\textbf{Rockwell Automation Learning+}
-\vspace{-12pt}
-\begin{multicols}{2}
-  \resumeItemListStart
-  \setlength{\itemsep}{0pt}
-    \resumeItem{CCP146 L1}{ControlLogix 5000 System Fundamentals}
-    \resumeItem{CCP151 L2}{Basic Ladder Logic Programming}
-    \resumeItem{CCP153 L2}{ControlLogix Maintenance}
-    \resumeItem{CCCL21 L3}{Basic Ladder Logic Interpretation}
-    \resumeItem{CCP143 L3}{Project Development}
-    \resumeItem{CCP154-EL L4}{STL and SFC Programming}
-    \resumeItem{CCP152 L4}{Function Block Programming}
-  \resumeItemListEnd
-\end{multicols}
+\textbf{Rockwell Automation Learning+} --- ControlLogix Fundamentals, Ladder Logic (L1--L4), Maintenance, STL/SFC, Function Block Programming
 
 \end{document}
